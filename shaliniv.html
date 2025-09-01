@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V. Shalini | Naan Mudhalvan Portfolio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for animations and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 px-4 shadow-lg">
+        <div class="container mx-auto max-w-7xl text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <!-- Profile Image -->
+                <img src="https://placehold.co/150x150/ffffff/565656?text=V.S" alt="V. Shalini" class="rounded-full border-4 border-white shadow-xl w-32 h-32 md:w-40 md:h-40 object-cover">
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">V. SHALINI</h1>
+                    <p class="mt-2 text-xl md:text-2xl font-light opacity-90">Computer Science Student | Naan Mudhalvan Initiative</p>
+                </div>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="mt-8">
+                <ul class="flex justify-center space-x-6 md:space-x-10 text-lg md:text-xl font-medium">
+                    <li><a href="#about" class="hover:text-yellow-300 transition duration-300 ease-in-out">About</a></li>
+                    <li><a href="#skills" class="hover:text-yellow-300 transition duration-300 ease-in-out">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-yellow-300 transition duration-300 ease-in-out">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300 transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-7xl p-6 md:p-12 space-y-16 md:space-y-24">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-4 border-purple-500 pb-2">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                I am V. Shalini, a dedicated and passionate Computer Science student from the Naan Mudhalvan initiative. I am driven by a deep curiosity for technology and a commitment to learning. Through the Naan Mudhalvan program, I have been equipped with valuable skills to build a strong foundation in software development and problem-solving. I am a team player with a can-do attitude, always eager to take on new challenges and contribute to impactful projects.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 border-b-4 border-purple-500 pb-2">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Skill Card -->
+                <div class="skill-card bg-purple-50 text-purple-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-brands fa-html5 text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">HTML</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-blue-50 text-blue-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-brands fa-css3-alt text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">CSS</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-yellow-50 text-yellow-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-brands fa-js-square text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-green-50 text-green-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-brands fa-python text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">Python</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-red-50 text-red-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-solid fa-database text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">SQL</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-pink-50 text-pink-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-solid fa-code text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">C++</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-indigo-50 text-indigo-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-solid fa-mobile-screen-button text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">Mobile App Dev</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-cyan-50 text-cyan-800 p-6 rounded-xl shadow-md text-center">
+                    <i class="fa-solid fa-wrench text-4xl mb-3"></i>
+                    <h3 class="text-xl font-semibold">Problem Solving</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 border-b-4 border-purple-500 pb-2">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden shadow-lg border-2 border-purple-200">
+                    <img src="https://placehold.co/600x400/D1C4E9/512DA8?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-900">Responsive Web Design</h3>
+                        <p class="text-gray-700 mb-4">
+                            Developed a fully responsive website using HTML and CSS, showcasing dynamic content layouts that adapt to various screen sizes.
+                        </p>
+                        <a href="#" class="text-purple-600 hover:text-purple-800 font-medium transition duration-300 ease-in-out">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-50 rounded-xl overflow-hidden shadow-lg border-2 border-purple-200">
+                    <img src="https://placehold.co/600x400/C5CAE9/3F51B5?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-900">Interactive JavaScript Game</h3>
+                        <p class="text-gray-700 mb-4">
+                            Created a small interactive game using JavaScript, focusing on DOM manipulation, event handling, and logical game flow.
+                        </p>
+                        <a href="#" class="text-purple-600 hover:text-purple-800 font-medium transition duration-300 ease-in-out">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-4 border-purple-500 pb-2 inline-block">Contact</h2>
+            <div class="mt-8 space-y-4">
+                <p class="text-xl md:text-2xl font-medium text-gray-800">
+                    Feel free to get in touch with me!
+                </p>
+                <a href="mailto:shalinijncw2006@gmail.com" class="text-purple-600 hover:text-purple-800 font-bold text-2xl md:text-3xl transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-envelope mr-2"></i> shalinijncw2006@gmail.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6 mt-16 text-center">
+        <div class="container mx-auto max-w-7xl">
+            <p class="text-sm md:text-base">&copy; 2024 V. Shalini. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
